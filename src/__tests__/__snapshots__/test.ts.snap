@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createDeps 1`] = `
+Object {
+  "bundleDependencies": Object {},
+  "bundledDependencies": Object {},
+  "dependencies": Object {
+    "a": Object {
+      "homepage": "",
+      "npm": "https://www.npmjs.com/package/a",
+      "repository": "",
+      "version": "2.1.2",
+    },
+  },
+  "devDependencies": Object {},
+  "optionalDependencies": Object {},
+  "peerDependencies": Object {},
+}
+`;
+
+exports[`createDeps 2`] = `
+"
+  [32m[1mdependencies[22m[39m
+  a  [90m2.1.2[39m  [34m[4mhttps://www.npmjs.com/package/a[24m[39m  "
+`;
+
+exports[`createDeps 3`] = `
+"
+  dependencies
+  a  2.1.2  https://www.npmjs.com/package/a  "
+`;
