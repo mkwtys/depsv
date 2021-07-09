@@ -4,7 +4,7 @@ import Module from 'module'
 import packageJson from 'package-json'
 import path from 'path'
 import pathExists from 'path-exists'
-import readPkg from 'read-pkg'
+import { readPackageAsync } from 'read-pkg'
 
 type Dependency = {
   [pkgName: string]: {
@@ -35,7 +35,7 @@ function getPackagePath(pkgName: string, options: { cwd?: string }) {
 }
 
 export async function createDeps({ cwd }: { cwd: string }): Promise<Dependencies> {
-  const pkg = await readPkg({ cwd })
+  const pkg = await readPackageAsync({ cwd })
 
   const createSummary = async (deps): Promise<Dependency> => {
     if (!deps) {
@@ -61,7 +61,7 @@ export async function createDeps({ cwd }: { cwd: string }): Promise<Dependencies
     return await Object.keys(deps).reduce(async (prev, value) => {
       const prevValue = await prev
       const pkgPath = getPackagePath(value, { cwd })
-      const pkg = pkgPath ? await readPkg({ cwd: pkgPath }) : await packageJson(value)
+      const pkg = pkgPath ? await readPackageAsync({ cwd: pkgPath }) : await packageJson(value, { fullMetadata: true })
 
       return {
         ...{
@@ -132,8 +132,6 @@ export function depsToString(deps: Dependencies) {
   const spaceToString = (repeat) => ' '.repeat(repeat)
   const versionIndentToString = (pkgName) => spaceToString(maxDepsNameLength - pkgName.length + PADDING)
   const urlIndentToString = (version) => spaceToString(maxVersionLength - version.length + PADDING)
-  const nextUrlLineIndentToString = () =>
-    spaceToString(INDENT + maxDepsNameLength + PADDING + maxVersionLength + PADDING)
 
   return Object.entries(deps)
     .filter(([depsName, dep]) => Object.keys(dep).length)
