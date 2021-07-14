@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createDeps 1`] = `
+exports[`depsToString 1`] = `
 Object {
   "bundleDependencies": Object {},
   "bundledDependencies": Object {},
@@ -71,7 +71,7 @@ Object {
       "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
       "npm": "https://www.npmjs.com/package/@types/node",
       "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-      "version": "16.3.0",
+      "version": "16.3.2",
     },
     "jest": Object {
       "homepage": "https://jestjs.io/",
@@ -109,7 +109,7 @@ Object {
 }
 `;
 
-exports[`createDeps 2`] = `
+exports[`depsToString 2`] = `
 "
   [32m[1mdependencies[22m[39m
   chalk                     [90m4.1.1[39m    [34m[4mhttps://www.npmjs.com/package/chalk[24m[39m                     [34m[4mhttps://github.com/chalk/chalk[24m[39m
@@ -124,7 +124,7 @@ exports[`createDeps 2`] = `
   @babel/preset-env         [90m7.14.7[39m   [34m[4mhttps://www.npmjs.com/package/@babel/preset-env[24m[39m         [34m[4mhttps://babel.dev/docs/en/next/babel-preset-env[24m[39m
   @babel/preset-typescript  [90m7.14.5[39m   [34m[4mhttps://www.npmjs.com/package/@babel/preset-typescript[24m[39m  [34m[4mhttps://babel.dev/docs/en/next/babel-preset-typescript[24m[39m
   @types/jest               [90m26.0.24[39m  [34m[4mhttps://www.npmjs.com/package/@types/jest[24m[39m               [34m[4mhttps://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jest[24m[39m
-  @types/node               [90m16.3.0[39m   [34m[4mhttps://www.npmjs.com/package/@types/node[24m[39m               [34m[4mhttps://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node[24m[39m
+  @types/node               [90m16.3.2[39m   [34m[4mhttps://www.npmjs.com/package/@types/node[24m[39m               [34m[4mhttps://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node[24m[39m
   jest                      [90m27.0.6[39m   [34m[4mhttps://www.npmjs.com/package/jest[24m[39m                      [34m[4mhttps://jestjs.io/[24m[39m
   npm-run-all               [90m4.1.5[39m    [34m[4mhttps://www.npmjs.com/package/npm-run-all[24m[39m               [34m[4mhttps://github.com/mysticatea/npm-run-all[24m[39m
   rimraf                    [90m3.0.2[39m    [34m[4mhttps://www.npmjs.com/package/rimraf[24m[39m                    [34m[4mhttps://github.com/isaacs/rimraf[24m[39m
@@ -132,7 +132,7 @@ exports[`createDeps 2`] = `
   typescript                [90m4.3.5[39m    [34m[4mhttps://www.npmjs.com/package/typescript[24m[39m                [34m[4mhttps://www.typescriptlang.org/[24m[39m"
 `;
 
-exports[`createDeps 3`] = `
+exports[`depsToString 3`] = `
 "
   dependencies
   chalk                     4.1.1    https://www.npmjs.com/package/chalk                     https://github.com/chalk/chalk
@@ -147,7 +147,7 @@ exports[`createDeps 3`] = `
   @babel/preset-env         7.14.7   https://www.npmjs.com/package/@babel/preset-env         https://babel.dev/docs/en/next/babel-preset-env
   @babel/preset-typescript  7.14.5   https://www.npmjs.com/package/@babel/preset-typescript  https://babel.dev/docs/en/next/babel-preset-typescript
   @types/jest               26.0.24  https://www.npmjs.com/package/@types/jest               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jest
-  @types/node               16.3.0   https://www.npmjs.com/package/@types/node               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
+  @types/node               16.3.2   https://www.npmjs.com/package/@types/node               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
   jest                      27.0.6   https://www.npmjs.com/package/jest                      https://jestjs.io/
   npm-run-all               4.1.5    https://www.npmjs.com/package/npm-run-all               https://github.com/mysticatea/npm-run-all
   rimraf                    3.0.2    https://www.npmjs.com/package/rimraf                    https://github.com/isaacs/rimraf
