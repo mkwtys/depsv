@@ -124,6 +124,6 @@ it('depsToString', async () => {
   }
   expect(deps).toMatchSnapshot()
   const depsString = await depsToString(deps)
-  expect(depsString).toMatchSnapshot()
+  // expect(depsString).toMatchSnapshot()
   expect(stripAnsi(depsString)).toMatchSnapshot()
 })
