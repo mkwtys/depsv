@@ -4,6 +4,7 @@
   "description": "",
   "license": "MIT",
   "author": "",
+  "type": "module",
   "main": "index.js",
   "bin": {
     "depsv": "./bin/depsv.js"
@@ -31,8 +32,7 @@
           "targets": {
             "node": 12
           },
-          "useBuiltIns": "usage",
-          "corejs": 3
+          "modules": false
         }
       ]
     ]
@@ -43,12 +43,12 @@
     "singleQuote": true
   },
   "jest": {
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/lib/"
-    ],
-    "extensionsToTreatAsEsm": [
-      ".ts"
     ]
   },
   "dependencies": {

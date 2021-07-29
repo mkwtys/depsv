@@ -1,1 +1,1 @@
-export { showDeps } from './showDeps'
+export { showDeps } from './showDeps.js'
