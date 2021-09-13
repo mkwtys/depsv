@@ -10,32 +10,9 @@
     "depsv": "./bin/depsv.js"
   },
   "scripts": {
-    "build": "npm-run-all clean:build -p build:{js,types}",
-    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\"",
-    "build:types": "tsc --emitDeclarationOnly",
-    "clean:build": "rimraf lib",
     "coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:update": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -u",
-    "type-check": "tsc --noEmit",
-    "type-check:watch": "npm run type-check -- --watch",
-    "watch": "npm-run-all clean:build -p watch:{js,types}",
-    "watch:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --watch",
-    "watch:types": "tsc --emitDeclarationOnly --watch"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-typescript",
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": 12
-          },
-          "modules": false
-        }
-      ]
-    ]
+    "test:update": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -u"
   },
   "prettier": {
     "printWidth": 120,
@@ -43,9 +20,6 @@
     "singleQuote": true
   },
   "jest": {
-    "extensionsToTreatAsEsm": [
-      ".ts"
-    ],
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/lib/"
@@ -60,16 +34,9 @@
     "yargs": "^17.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "7.15.4",
-    "@babel/preset-env": "7.15.6",
-    "@babel/preset-typescript": "7.15.0",
-    "@types/jest": "27.0.1",
-    "@types/node": "16.3.2",
     "cross-env": "7.0.3",
     "jest": "27.1.1",
-    "npm-run-all": "4.1.5",
     "rimraf": "3.0.2",
-    "strip-ansi": "7.0.1",
-    "typescript": "4.4.3"
+    "strip-ansi": "7.0.1"
   }
 }
