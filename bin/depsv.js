@@ -8,7 +8,7 @@ yargs(process.argv.slice(2)).usage(`Usage:\n  $ depsv`).locale('en').help().alia
   v: 'version',
 })
 
-await showDeps().catch((err) => {
+showDeps().catch((err) => {
   console.log(err)
   process.exit(1)
 })
