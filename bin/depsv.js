@@ -1,8 +1,14 @@
 #!/usr/bin/env node
 
-import { run } from '../lib/cli.js'
+import yargs from 'yargs'
+import { showDeps } from '../lib/index.js'
 
-run().catch((err) => {
+yargs(process.argv.slice(2)).usage(`Usage:\n  $ depsv`).locale('en').help().alias({
+  h: 'help',
+  v: 'version',
+})
+
+showDeps().catch((err) => {
   console.log(err)
   process.exit(1)
 })

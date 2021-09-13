@@ -104,5 +104,4 @@ dist
 .tern-port
 
 
-lib
-!__tests__/fixtures
+!test/fixtures
