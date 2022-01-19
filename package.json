@@ -23,7 +23,10 @@
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/lib/"
-    ]
+    ],
+    "moduleNameMapper": {
+      "#(.*)": "<rootDir>/node_modules/$1"
+    }
   },
   "dependencies": {
     "chalk": "^4.1.1",
