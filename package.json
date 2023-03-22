@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "cross-env": "7.0.3",
-    "jest": "29.4.3",
+    "jest": "29.5.0",
     "rimraf": "4.3.1",
     "strip-ansi": "7.0.1"
   }
