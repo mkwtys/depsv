@@ -1,5 +1,4 @@
 import path from 'node:path'
-import stripAnsi from 'strip-ansi'
 import { fileURLToPath } from 'node:url'
 import { createDeps, depsToString } from '../lib/index.js'
 
@@ -124,5 +123,5 @@ it('depsToString', async () => {
   }
   expect(deps).toMatchSnapshot()
   const depsString = await depsToString(deps)
-  expect(stripAnsi(depsString)).toMatchSnapshot()
+  expect(depsString).toMatchSnapshot()
 })

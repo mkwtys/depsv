@@ -111,23 +111,23 @@ exports[`depsToString 1`] = `
 
 exports[`depsToString 2`] = `
 "
-  dependencies
-  chalk                     4.1.1    https://www.npmjs.com/package/chalk                     https://github.com/chalk/chalk
-  core-js                   3.15.2   https://www.npmjs.com/package/core-js                   https://github.com/zloirock/core-js
-  package-json              7.0.0    https://www.npmjs.com/package/package-json              https://github.com/sindresorhus/package-json
-  path-exists               4.0.0    https://www.npmjs.com/package/path-exists               https://github.com/sindresorhus/path-exists
-  read-pkg                  6.0.0    https://www.npmjs.com/package/read-pkg                  https://github.com/sindresorhus/read-pkg
-  yargs                     17.0.1   https://www.npmjs.com/package/yargs                     https://yargs.js.org/
+  [32m[1mdependencies[22m[39m
+  chalk                     [90m4.1.1[39m    [34m[4mhttps://www.npmjs.com/package/chalk[24m[39m                     [34m[4mhttps://github.com/chalk/chalk[24m[39m
+  core-js                   [90m3.15.2[39m   [34m[4mhttps://www.npmjs.com/package/core-js[24m[39m                   [34m[4mhttps://github.com/zloirock/core-js[24m[39m
+  package-json              [90m7.0.0[39m    [34m[4mhttps://www.npmjs.com/package/package-json[24m[39m              [34m[4mhttps://github.com/sindresorhus/package-json[24m[39m
+  path-exists               [90m4.0.0[39m    [34m[4mhttps://www.npmjs.com/package/path-exists[24m[39m               [34m[4mhttps://github.com/sindresorhus/path-exists[24m[39m
+  read-pkg                  [90m6.0.0[39m    [34m[4mhttps://www.npmjs.com/package/read-pkg[24m[39m                  [34m[4mhttps://github.com/sindresorhus/read-pkg[24m[39m
+  yargs                     [90m17.0.1[39m   [34m[4mhttps://www.npmjs.com/package/yargs[24m[39m                     [34m[4mhttps://yargs.js.org/[24m[39m
 
-  devDependencies
-  @babel/cli                7.14.5   https://www.npmjs.com/package/@babel/cli                https://babel.dev/docs/en/next/babel-cli
-  @babel/preset-env         7.14.7   https://www.npmjs.com/package/@babel/preset-env         https://babel.dev/docs/en/next/babel-preset-env
-  @babel/preset-typescript  7.14.5   https://www.npmjs.com/package/@babel/preset-typescript  https://babel.dev/docs/en/next/babel-preset-typescript
-  @types/jest               26.0.24  https://www.npmjs.com/package/@types/jest               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jest
-  @types/node               16.3.2   https://www.npmjs.com/package/@types/node               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
-  jest                      27.0.6   https://www.npmjs.com/package/jest                      https://jestjs.io/
-  npm-run-all               4.1.5    https://www.npmjs.com/package/npm-run-all               https://github.com/mysticatea/npm-run-all
-  rimraf                    3.0.2    https://www.npmjs.com/package/rimraf                    https://github.com/isaacs/rimraf
-  strip-ansi                7.0.0    https://www.npmjs.com/package/strip-ansi                https://github.com/chalk/strip-ansi
-  typescript                4.3.5    https://www.npmjs.com/package/typescript                https://www.typescriptlang.org/"
+  [32m[1mdevDependencies[22m[39m
+  @babel/cli                [90m7.14.5[39m   [34m[4mhttps://www.npmjs.com/package/@babel/cli[24m[39m                [34m[4mhttps://babel.dev/docs/en/next/babel-cli[24m[39m
+  @babel/preset-env         [90m7.14.7[39m   [34m[4mhttps://www.npmjs.com/package/@babel/preset-env[24m[39m         [34m[4mhttps://babel.dev/docs/en/next/babel-preset-env[24m[39m
+  @babel/preset-typescript  [90m7.14.5[39m   [34m[4mhttps://www.npmjs.com/package/@babel/preset-typescript[24m[39m  [34m[4mhttps://babel.dev/docs/en/next/babel-preset-typescript[24m[39m
+  @types/jest               [90m26.0.24[39m  [34m[4mhttps://www.npmjs.com/package/@types/jest[24m[39m               [34m[4mhttps://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jest[24m[39m
+  @types/node               [90m16.3.2[39m   [34m[4mhttps://www.npmjs.com/package/@types/node[24m[39m               [34m[4mhttps://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node[24m[39m
+  jest                      [90m27.0.6[39m   [34m[4mhttps://www.npmjs.com/package/jest[24m[39m                      [34m[4mhttps://jestjs.io/[24m[39m
+  npm-run-all               [90m4.1.5[39m    [34m[4mhttps://www.npmjs.com/package/npm-run-all[24m[39m               [34m[4mhttps://github.com/mysticatea/npm-run-all[24m[39m
+  rimraf                    [90m3.0.2[39m    [34m[4mhttps://www.npmjs.com/package/rimraf[24m[39m                    [34m[4mhttps://github.com/isaacs/rimraf[24m[39m
+  strip-ansi                [90m7.0.0[39m    [34m[4mhttps://www.npmjs.com/package/strip-ansi[24m[39m                [34m[4mhttps://github.com/chalk/strip-ansi[24m[39m
+  typescript                [90m4.3.5[39m    [34m[4mhttps://www.npmjs.com/package/typescript[24m[39m                [34m[4mhttps://www.typescriptlang.org/[24m[39m"
 `;
