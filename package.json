@@ -39,7 +39,7 @@
   "devDependencies": {
     "cross-env": "10.1.0",
     "jest": "30.0.5",
-    "rimraf": "6.0.1",
+    "rimraf": "6.1.2",
     "strip-ansi": "7.1.2"
   }
 }
