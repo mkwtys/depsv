@@ -14,6 +14,7 @@ it('createDeps', async () => {
   expect(deps.optionalDependencies).toBeTruthy()
   expect(deps.bundleDependencies).toBeTruthy()
   expect(deps.bundledDependencies).toBeTruthy()
+  expect(Object.keys(deps.dependencies)).toMatchSnapshot()
 })
 
 it('depsToString', async () => {
@@ -126,4 +127,16 @@ it('depsToString', async () => {
   expect(deps).toMatchSnapshot()
   const depsString = await depsToString(deps)
   expect(stripAnsi(depsString)).toMatchSnapshot()
+})
+
+it('depsToString returns empty string when all deps are empty', () => {
+  const deps = {
+    dependencies: {},
+    devDependencies: {},
+    peerDependencies: {},
+    optionalDependencies: {},
+    bundleDependencies: {},
+    bundledDependencies: {},
+  }
+  expect(depsToString(deps)).toBe('')
 })
