@@ -1,4 +1,5 @@
 import path from 'node:path'
+import { expect, it } from 'vitest'
 import stripAnsi from 'strip-ansi'
 import { fileURLToPath } from 'node:url'
 import { createDeps, depsToString } from '../lib/index.js'

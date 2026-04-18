@@ -10,23 +10,14 @@
     "depsv": "./bin/depsv.js"
   },
   "scripts": {
-    "coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:update": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -u"
+    "coverage": "vitest run --coverage",
+    "test": "vitest run",
+    "test:update": "vitest run -u"
   },
   "prettier": {
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "testPathIgnorePatterns": [
-      "<rootDir>/lib/"
-    ],
-    "moduleNameMapper": {
-      "#(.*)": "<rootDir>/node_modules/$1"
-    }
   },
   "dependencies": {
     "chalk": "^5.0.0",
@@ -37,9 +28,8 @@
     "yargs": "^18.0.0"
   },
   "devDependencies": {
-    "cross-env": "10.1.0",
-    "jest": "30.0.5",
     "rimraf": "6.1.3",
-    "strip-ansi": "7.2.0"
+    "strip-ansi": "7.2.0",
+    "vitest": "^3.0.0"
   }
 }
