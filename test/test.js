@@ -4,6 +4,18 @@ import stripAnsi from 'strip-ansi'
 import { fileURLToPath } from 'node:url'
 import { createDeps, depsToString } from '../lib/index.js'
 
+it('createDeps reads package info from local node_modules', async () => {
+  const deps = await createDeps({
+    cwd: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'fixtures-local'),
+  })
+  expect(deps.dependencies['local-pkg']).toEqual({
+    homepage: 'https://example.com/local-pkg',
+    npm: 'https://www.npmjs.com/package/local-pkg',
+    repository: 'https://github.com/example/local-pkg',
+    version: '1.2.3',
+  })
+})
+
 it('createDeps', async () => {
   const deps = await createDeps({
     cwd: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'fixtures'),
@@ -14,7 +26,7 @@ it('createDeps', async () => {
   expect(deps.optionalDependencies).toBeTruthy()
   expect(deps.bundleDependencies).toBeTruthy()
   expect(deps.bundledDependencies).toBeTruthy()
-  expect(Object.keys(deps.dependencies)).toMatchSnapshot()
+  expect(deps.dependencies).toMatchSnapshot()
 })
 
 it('depsToString', async () => {
@@ -127,6 +139,37 @@ it('depsToString', async () => {
   expect(deps).toMatchSnapshot()
   const depsString = await depsToString(deps)
   expect(stripAnsi(depsString)).toMatchSnapshot()
+})
+
+it('depsToString url display patterns', () => {
+  const deps = {
+    dependencies: {
+      'with-homepage': {
+        homepage: 'https://example.com',
+        npm: 'https://www.npmjs.com/package/with-homepage',
+        repository: 'https://github.com/example/with-homepage',
+        version: '1.0.0',
+      },
+      'without-homepage': {
+        homepage: '',
+        npm: 'https://www.npmjs.com/package/without-homepage',
+        repository: 'https://github.com/example/without-homepage',
+        version: '1.0.0',
+      },
+      'without-urls': {
+        homepage: '',
+        npm: 'https://www.npmjs.com/package/without-urls',
+        repository: '',
+        version: '1.0.0',
+      },
+    },
+    devDependencies: {},
+    peerDependencies: {},
+    optionalDependencies: {},
+    bundleDependencies: {},
+    bundledDependencies: {},
+  }
+  expect(stripAnsi(depsToString(deps))).toMatchSnapshot()
 })
 
 it('depsToString returns empty string when all deps are empty', () => {

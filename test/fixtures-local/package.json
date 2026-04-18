@@ -1,0 +1,7 @@
+{
+  "name": "fixtures-local",
+  "version": "1.0.0",
+  "dependencies": {
+    "local-pkg": "1.2.3"
+  }
+}

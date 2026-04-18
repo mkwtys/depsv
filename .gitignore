@@ -105,3 +105,5 @@ dist
 
 
 !test/fixtures
+!test/fixtures-local/node_modules
+!test/fixtures-local/node_modules/**
