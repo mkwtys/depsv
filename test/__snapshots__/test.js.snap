@@ -1,14 +1,44 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`createDeps 1`] = `
-[
-  "chalk",
-  "core-js",
-  "package-json",
-  "path-exists",
-  "read-pkg",
-  "yargs",
-]
+{
+  "chalk": {
+    "homepage": "https://github.com/chalk/chalk",
+    "npm": "https://www.npmjs.com/package/chalk",
+    "repository": "https://github.com/chalk/chalk",
+    "version": "5.6.2",
+  },
+  "core-js": {
+    "homepage": "https://core-js.io/",
+    "npm": "https://www.npmjs.com/package/core-js",
+    "repository": "https://github.com/zloirock/core-js",
+    "version": "3.49.0",
+  },
+  "package-json": {
+    "homepage": "https://github.com/sindresorhus/package-json",
+    "npm": "https://www.npmjs.com/package/package-json",
+    "repository": "https://github.com/sindresorhus/package-json",
+    "version": "10.0.1",
+  },
+  "path-exists": {
+    "homepage": "https://github.com/sindresorhus/path-exists",
+    "npm": "https://www.npmjs.com/package/path-exists",
+    "repository": "https://github.com/sindresorhus/path-exists",
+    "version": "5.0.0",
+  },
+  "read-pkg": {
+    "homepage": "https://github.com/sindresorhus/read-pkg",
+    "npm": "https://www.npmjs.com/package/read-pkg",
+    "repository": "https://github.com/sindresorhus/read-pkg",
+    "version": "10.1.0",
+  },
+  "yargs": {
+    "homepage": "https://yargs.js.org/",
+    "npm": "https://www.npmjs.com/package/yargs",
+    "repository": "https://github.com/yargs/yargs",
+    "version": "18.0.0",
+  },
+}
 `;
 
 exports[`depsToString 1`] = `
@@ -141,4 +171,12 @@ exports[`depsToString 2`] = `
   rimraf                    3.0.2    https://www.npmjs.com/package/rimraf                    https://github.com/isaacs/rimraf
   strip-ansi                7.0.0    https://www.npmjs.com/package/strip-ansi                https://github.com/chalk/strip-ansi
   typescript                4.3.5    https://www.npmjs.com/package/typescript                https://www.typescriptlang.org/"
+`;
+
+exports[`depsToString url display patterns 1`] = `
+"
+  dependencies
+  with-homepage     1.0.0  https://www.npmjs.com/package/with-homepage     https://example.com
+  without-homepage  1.0.0  https://www.npmjs.com/package/without-homepage  https://github.com/example/without-homepage
+  without-urls      1.0.0  https://www.npmjs.com/package/without-urls      "
 `;

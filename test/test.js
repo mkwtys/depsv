@@ -14,7 +14,7 @@ it('createDeps', async () => {
   expect(deps.optionalDependencies).toBeTruthy()
   expect(deps.bundleDependencies).toBeTruthy()
   expect(deps.bundledDependencies).toBeTruthy()
-  expect(Object.keys(deps.dependencies)).toMatchSnapshot()
+  expect(deps.dependencies).toMatchSnapshot()
 })
 
 it('depsToString', async () => {
@@ -127,6 +127,37 @@ it('depsToString', async () => {
   expect(deps).toMatchSnapshot()
   const depsString = await depsToString(deps)
   expect(stripAnsi(depsString)).toMatchSnapshot()
+})
+
+it('depsToString url display patterns', () => {
+  const deps = {
+    dependencies: {
+      'with-homepage': {
+        homepage: 'https://example.com',
+        npm: 'https://www.npmjs.com/package/with-homepage',
+        repository: 'https://github.com/example/with-homepage',
+        version: '1.0.0',
+      },
+      'without-homepage': {
+        homepage: '',
+        npm: 'https://www.npmjs.com/package/without-homepage',
+        repository: 'https://github.com/example/without-homepage',
+        version: '1.0.0',
+      },
+      'without-urls': {
+        homepage: '',
+        npm: 'https://www.npmjs.com/package/without-urls',
+        repository: '',
+        version: '1.0.0',
+      },
+    },
+    devDependencies: {},
+    peerDependencies: {},
+    optionalDependencies: {},
+    bundleDependencies: {},
+    bundledDependencies: {},
+  }
+  expect(stripAnsi(depsToString(deps))).toMatchSnapshot()
 })
 
 it('depsToString returns empty string when all deps are empty', () => {
