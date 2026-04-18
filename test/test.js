@@ -4,6 +4,18 @@ import stripAnsi from 'strip-ansi'
 import { fileURLToPath } from 'node:url'
 import { createDeps, depsToString } from '../lib/index.js'
 
+it('createDeps reads package info from local node_modules', async () => {
+  const deps = await createDeps({
+    cwd: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'fixtures-local'),
+  })
+  expect(deps.dependencies['local-pkg']).toEqual({
+    homepage: 'https://example.com/local-pkg',
+    npm: 'https://www.npmjs.com/package/local-pkg',
+    repository: 'https://github.com/example/local-pkg',
+    version: '1.2.3',
+  })
+})
+
 it('createDeps', async () => {
   const deps = await createDeps({
     cwd: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'fixtures'),
