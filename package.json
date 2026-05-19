@@ -14,7 +14,7 @@
   "main": "index.js",
   "types": "./lib/index.d.ts",
   "bin": {
-    "depsv": "./bin/depsv.js"
+    "depsv": "bin/depsv.js"
   },
   "files": [
     "bin",
