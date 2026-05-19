@@ -152,31 +152,31 @@ exports[`depsToString 1`] = `
 
 exports[`depsToString 2`] = `
 "
-  dependencies
-  chalk                     4.1.1    https://www.npmjs.com/package/chalk                     https://github.com/chalk/chalk
-  core-js                   3.15.2   https://www.npmjs.com/package/core-js                   https://github.com/zloirock/core-js
-  package-json              7.0.0    https://www.npmjs.com/package/package-json              https://github.com/sindresorhus/package-json
-  path-exists               4.0.0    https://www.npmjs.com/package/path-exists               https://github.com/sindresorhus/path-exists
-  read-pkg                  6.0.0    https://www.npmjs.com/package/read-pkg                  https://github.com/sindresorhus/read-pkg
-  yargs                     17.0.1   https://www.npmjs.com/package/yargs                     https://yargs.js.org/
+dependencies
+chalk                     4.1.1    https://www.npmjs.com/package/chalk                     https://github.com/chalk/chalk
+core-js                   3.15.2   https://www.npmjs.com/package/core-js                   https://github.com/zloirock/core-js
+package-json              7.0.0    https://www.npmjs.com/package/package-json              https://github.com/sindresorhus/package-json
+path-exists               4.0.0    https://www.npmjs.com/package/path-exists               https://github.com/sindresorhus/path-exists
+read-pkg                  6.0.0    https://www.npmjs.com/package/read-pkg                  https://github.com/sindresorhus/read-pkg
+yargs                     17.0.1   https://www.npmjs.com/package/yargs                     https://yargs.js.org/
 
-  devDependencies
-  @babel/cli                7.14.5   https://www.npmjs.com/package/@babel/cli                https://babel.dev/docs/en/next/babel-cli
-  @babel/preset-env         7.14.7   https://www.npmjs.com/package/@babel/preset-env         https://babel.dev/docs/en/next/babel-preset-env
-  @babel/preset-typescript  7.14.5   https://www.npmjs.com/package/@babel/preset-typescript  https://babel.dev/docs/en/next/babel-preset-typescript
-  @types/jest               26.0.24  https://www.npmjs.com/package/@types/jest               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jest
-  @types/node               16.3.2   https://www.npmjs.com/package/@types/node               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
-  jest                      27.0.6   https://www.npmjs.com/package/jest                      https://jestjs.io/
-  npm-run-all               4.1.5    https://www.npmjs.com/package/npm-run-all               https://github.com/mysticatea/npm-run-all
-  rimraf                    3.0.2    https://www.npmjs.com/package/rimraf                    https://github.com/isaacs/rimraf
-  strip-ansi                7.0.0    https://www.npmjs.com/package/strip-ansi                https://github.com/chalk/strip-ansi
-  typescript                4.3.5    https://www.npmjs.com/package/typescript                https://www.typescriptlang.org/"
+devDependencies
+@babel/cli                7.14.5   https://www.npmjs.com/package/@babel/cli                https://babel.dev/docs/en/next/babel-cli
+@babel/preset-env         7.14.7   https://www.npmjs.com/package/@babel/preset-env         https://babel.dev/docs/en/next/babel-preset-env
+@babel/preset-typescript  7.14.5   https://www.npmjs.com/package/@babel/preset-typescript  https://babel.dev/docs/en/next/babel-preset-typescript
+@types/jest               26.0.24  https://www.npmjs.com/package/@types/jest               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jest
+@types/node               16.3.2   https://www.npmjs.com/package/@types/node               https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
+jest                      27.0.6   https://www.npmjs.com/package/jest                      https://jestjs.io/
+npm-run-all               4.1.5    https://www.npmjs.com/package/npm-run-all               https://github.com/mysticatea/npm-run-all
+rimraf                    3.0.2    https://www.npmjs.com/package/rimraf                    https://github.com/isaacs/rimraf
+strip-ansi                7.0.0    https://www.npmjs.com/package/strip-ansi                https://github.com/chalk/strip-ansi
+typescript                4.3.5    https://www.npmjs.com/package/typescript                https://www.typescriptlang.org/"
 `;
 
 exports[`depsToString url display patterns 1`] = `
 "
-  dependencies
-  with-homepage     1.0.0  https://www.npmjs.com/package/with-homepage     https://example.com
-  without-homepage  1.0.0  https://www.npmjs.com/package/without-homepage  https://github.com/example/without-homepage
-  without-urls      1.0.0  https://www.npmjs.com/package/without-urls      "
+dependencies
+with-homepage     1.0.0  https://www.npmjs.com/package/with-homepage     https://example.com
+without-homepage  1.0.0  https://www.npmjs.com/package/without-homepage  https://github.com/example/without-homepage
+without-urls      1.0.0  https://www.npmjs.com/package/without-urls      "
 `;
