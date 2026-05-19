@@ -1,14 +1,25 @@
 {
   "name": "depsv",
   "version": "0.1.0",
-  "description": "",
+  "description": "show deps",
+  "homepage": "https://github.com/mkwtys/depsv",
+  "bugs": "https://github.com/mkwtys/depsv/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkwtys/depsv.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "mkwtys <mkwtys@gmail.com>",
   "type": "module",
   "main": "index.js",
+  "types": "./lib/index.d.ts",
   "bin": {
     "depsv": "./bin/depsv.js"
   },
+  "files": [
+    "bin",
+    "lib"
+  ],
   "scripts": {
     "coverage": "vitest run --coverage",
     "test": "vitest run",
